@@ -11,8 +11,10 @@ export const HomeSection = ({ children }: any) => {
 };
 
 export const ProfileSection = (props: any) => {
+  
   return (
     <motion.img
+      variants={props}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1, delay: 1 }}
