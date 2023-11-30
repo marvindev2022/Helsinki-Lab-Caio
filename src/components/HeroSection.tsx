@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import lakeFinland from "../assets/foggy-lake-in-finland-wallpaper.jpg";
 
 export default function RenderHero(): JSX.Element {
-  const windowWidth = window.innerWidth;
   const variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
