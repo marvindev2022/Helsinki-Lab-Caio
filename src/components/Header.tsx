@@ -33,7 +33,7 @@ const Header = ({ selectedPage, setSelectedPage }: any) => {
         key={page}
         onClick={() => handlePageClick(page)}
         className={`cursor-pointer xl:mx-3 md:mx-2 mx-1 ${
-          selectedPage === page && "underline bg-black bg-opacity-10 h-10"
+          selectedPage === page && "underline h-10"
         } hover:underline `}
       >
         {page.charAt(0).toUpperCase() + page.slice(1)}

@@ -1,7 +1,8 @@
+import RenderConstructor from "./EmBreve";
 
 
 export default function RenderContact()  {
     return(
-        <h1>RenderContact</h1>
+        <RenderConstructor/>
     )
 }

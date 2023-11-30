@@ -1,7 +1,8 @@
+import RenderConstructor from "./EmBreve";
 
 
 export default function RenderPress()  {
     return(
-        <h1>RenderPress</h1>
+        <RenderConstructor/>
     )
 }

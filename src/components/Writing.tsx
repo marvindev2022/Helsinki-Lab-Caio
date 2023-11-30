@@ -1,7 +1,8 @@
+import RenderConstructor from "./EmBreve";
 
 
 export default function RenderWriting()  {
     return(
-        <h1>RenderWriting</h1>
+        <RenderConstructor/>
     )
 }

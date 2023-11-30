@@ -1,4 +1,5 @@
 // import { useEffect } from "react"
+import RenderConstructor from "./EmBreve";
 
 
 export default function RenderPolicyAndAdvocacy()  {
@@ -20,6 +21,6 @@ export default function RenderPolicyAndAdvocacy()  {
     //     </div>
     // )
     return(
-        <h1>RenderPolicyAndAdvocacy</h1>
+        <RenderConstructor/>
     )
 }
