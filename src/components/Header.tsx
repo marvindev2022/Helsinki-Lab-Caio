@@ -50,7 +50,7 @@ const Header = ({ selectedPage, setSelectedPage }: any) => {
         Caio Graco - Roza
       </h1>
       <span
-        className="block sm:hidden text-[2rem] cursor-pointer text-white absolute right-5 top-5"
+        className="block lg:hidden text-[2rem] cursor-pointer text-white absolute right-5 top-5"
         onClick={toggleMobileMenu}
       >
         ☰
@@ -63,12 +63,12 @@ const Header = ({ selectedPage, setSelectedPage }: any) => {
 
       <nav className={`flex justify-between items-center font-[secondary] `}>
         <ul
-          className={`hidden sm:flex  w-[300px] lg:w-4/5 lg:text-ellipsis  justify-between items-center text-white font-extrabold  `}
+          className={`hidden lg:flex  w-[300px] lg:w-4/5 lg:text-ellipsis  justify-between items-center text-white font-extrabold  `}
         >
           {renderNavLinks()}
         </ul>
       </nav>
-      <span className="hidden sm:block">
+      <span className="hidden lg:block">
         <Nav />
       </span>
     </header>
