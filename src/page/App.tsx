@@ -9,7 +9,7 @@ import RenderPress from "../components/Press";
 import RenderContact from "../components/Contact";
 import PageTransition from "../animation/PageTransition";
 import Header from "../components/Header";
-import RenderHome from "../components/Home";
+import RenderHome from "../components/home/Home";
 
 function App(): JSX.Element {
   const [selectedPage, setSelectedPage] = useState<string>("home");
@@ -31,18 +31,18 @@ function App(): JSX.Element {
   const windowScroll = () => {
     const header = document.querySelector("header");
     const scroll = window.scrollY;
-  
+
     if (scroll < 50) {
       header?.classList.remove("bg-primary");
     } else {
       header?.classList.add("bg-primary");
     }
   };
-  
+
   window.onscroll = () => {
     windowScroll();
   };
-  
+
   return (
     <main className="flex flex-col max-w-min overflow-x-hidden ">
       <Header
