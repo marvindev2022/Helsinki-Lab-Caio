@@ -8,10 +8,15 @@ import {
   DescriptionSection,
   HireMeButton,
 } from "./functions";
+import Nav from "../Nav";
 
 const RenderHome = (): JSX.Element => {
   const navigate = useNavigate();
 
+  const [navRef, navInView] = useInView({
+    triggerOnce: true,
+    rootMargin: "-50px",
+  });
   const [profileRef, profileInView] = useInView({
     triggerOnce: true,
     rootMargin: "-50px",
@@ -129,6 +134,15 @@ const RenderHome = (): JSX.Element => {
           </li>
         </ul>
       </motion.article>
+      <motion.div
+        ref={navRef}
+        initial={{ opacity: 0 }}
+        animate={navInView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 1, delay: 1 }}
+        className="pt-5 pb-20"
+      >
+        <Nav black={true} />
+      </motion.div>
     </HomeSection>
   );
 };
