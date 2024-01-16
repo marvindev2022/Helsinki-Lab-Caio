@@ -6,7 +6,7 @@ export default function RenderConstructor() {
        
         className="text-4xl text-center text-black font-bold"
       >
-        Em Construção
+        Em Construção...
       </h1>
     </section>
   );
